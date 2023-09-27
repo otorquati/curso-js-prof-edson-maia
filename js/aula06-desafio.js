@@ -3,13 +3,12 @@
 // Definições
 
 // Atletas
-let atleta = {
-    nome: 'Valdomirovich Emelianenko',
-    nacionalidade: 'Russo',
-    idade: 44,
-    peso: 106,
-    altura: 1.83    
-}
+
+let nome= 'Fedor Valdomirovich Emelianenko'
+let nacionalidade= 'Russo'
+let idade= 44
+let peso= 106
+let altura= 1.83    
 
 // Frase do dia
 const dia = 27
@@ -36,11 +35,11 @@ let jogo = {
 }
 
 document.write('<h2>Informações</h2>')
-document.write(`Lutador: ${atleta.nome} <br>`)
-document.write(`nacionalidade: ${atleta.nacionalidade} <br>`)
-document.write(`Idade: ${atleta.idade} anos<br>`)
-document.write(`Peso: ${atleta.peso} kg <br>`)
-document.write(`Altura: ${atleta.altura} m<br>`)
+document.write(`Lutador: ${nome} <br>`)
+document.write(`nacionalidade: ${nacionalidade} <br>`)
+document.write(`Idade: ${idade} anos<br>`)
+document.write(`Peso: ${peso} kg <br>`)
+document.write(`Altura: ${altura} m<br>`)
 
 // Exibição Frase do dia
 document.write('<h2>Frase do Dia</h2>')

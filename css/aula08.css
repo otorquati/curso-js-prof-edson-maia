@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 10px auto;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    background-color: rgb(122, 173, 255);
+}
+
+#titulo {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    color: blue
+}
+
+.box {
+   width: 80vw;
+}
+
+.titulo {
+    margin: 10px;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.textos {
+    margin: 15px 15px;
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    
+}
+

@@ -2,21 +2,35 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 10 de JS</title>
+    <title>Aula 11 - Eventos no JS</title>
+    <link rel="stylesheet" href="/css/aula11.css">
 </head>
-<body>
-    <main>
-        <h1>Aula 10</h1>
-        <section class='box'></section>
-        <section class='box'></section>
-        <section class='box'></section>
-        <section class='box'></section>
-        <section class='box'></section>
-        <h3>Abaixo é JS</h3>
+<body onload='carregou()'
+    onscroll="rolouPagina()">
+    <main class="tela-principal">
+        <h1 id="titulo" onmouseover="focou()">Aula 11</h1>
+        <section class="conteudo">
+            <article class="box">
+            </article>
+            <article class="box">
+            </article>
+            <button class="botao" id="btn1">Box 1</button>
+            <button class="botao" id="btn2">Box 2   </button>
+        </section>
+        <hr />
+        <form action="">
+            <input 
+            id="cxtexto"
+            type="text"
+            placeholder="Digite seu nome"
+            onfocus="focoNoCampo()"
+            onblur="semFocoNoCampo()"
+            onkeypress="avisarQueTeclou()" 
+            />
+            <button class="botao" id="btn3" type="submit">Enviar</button>
+        </form>
     </main>
-    <!-- arquivo js externo -->
-    <script src="js/aula10.js"></script>
+    <script src="/js/aula11.js"></script>
 </body>
 </html>

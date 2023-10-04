@@ -47,6 +47,8 @@ function (){
         situacao = 'Recuperação'
     }
     console.log(situacao)
+
+    /* DECISÃO - Switch case */
     switch(situacao) {
         
         case 'Aprovado':

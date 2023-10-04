@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #efefef;
+}
+
+main {
+    width: 100%;
+    padding: 1rem;
+    color: #4672e0;
+}
+
+/*section {
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+}*/
+
+ /* CLASS PARA FORMATAR COM JS */
+
+.alerta {
+    background: #f44336;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin: 0.625rem;
+}
+label {
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type=number], input[type=text] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+}
+
+/* BOTOES */
+.botao {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#resultadoImc {
+    border: 1px solid #ccc;
+    width: 60px;
+}
+
+#aviso {
+    font-weight: bold;
+}
+
+#btnEnviar {
+    background: #1a237e;
+    color: white;
+}
+
+#btnLimpar {
+    background: #ff3d00;
+}
+
+/* DIV #resultado */
+#resultado {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/* Parágrafos pessoa */
+.pessoa {
+    padding: 0.625rem;
+}
+
+.pessoa:nth-child(odd) {
+    background: lightgray;
+}
+
+.pessoa:nth-child(even) {
+    background: #fff;
+}

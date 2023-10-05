@@ -3,13 +3,13 @@
 let formulario = document.querySelector('form')
 
 // Definição de variável para cada campo
-let cxNome = document.querySelector('#nome')
+let cxNome  = document.querySelector('#nome')
 let cxIdade = document.querySelector('#idade')
-let cxPeso = document.querySelector('#peso')
+let cxPeso  = document.querySelector('#peso')
 let cxAltura = document.querySelector('#altura')
-let cxImc = document.querySelector('#resultadoImc')
-let aviso = document.querySelector('#aviso')
-let dados = document.querySelectorAll('.pessoa')
+let cxImc   = document.querySelector('#resultadoImc')
+let aviso   = document.querySelector('#aviso')
+let dados   = document.querySelectorAll('.pessoa')
 
 // definição das váriavies dos botões 
 let btnEnviar = document.querySelector('#btnEnviar')
@@ -43,7 +43,15 @@ btnEnviar.addEventListener('click', function(e) {
     aviso.textContent = sit
 
     // SAIDA DOS DADOS
-
+    /*
+    alert(
+        'Nome ' + nome + '\n' +
+        'Idade ' + idade + ' anos\n' +
+        'Peso ' + peso + 'Kg\n' +
+        'Altura ' + altura + 'm\n' +
+        'IMC ' + imc + ' ' + sit
+    ) 
+*/
     // Criar um objeto pessoa
     let pessoa = {
         nome    : nome,
@@ -54,11 +62,11 @@ btnEnviar.addEventListener('click', function(e) {
         sit     : sit,
     }
     console.log(pessoa)
-    dados[1].textContent = pessoa.nome
-    dados[2].textContent = pessoa.idade + " anos"
-    dados[3].textContent = pessoa.peso + " Kg"
-    dados[4].textContent = pessoa.altura + " m"
-    dados[5].textContent = pessoa.imc + "" + pessoa.sit
+    dados[1].textContent = "Nome: " + pessoa.nome
+    dados[2].textContent = "Idade: " + pessoa.idade + " anos"
+    dados[3].textContent = "Peso: " + pessoa.peso + " Kg"
+    dados[4].textContent = "Altura: " + pessoa.altura + " m"
+    dados[5].textContent = "IMC: " + pessoa.imc + " " + pessoa.sit
 
     e.preventDefault()
 })

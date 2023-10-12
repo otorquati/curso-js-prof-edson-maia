@@ -3,84 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 14 de JS</title>
-    <link rel="stylesheet" href="css/aula14.css">
+    <link rel="stylesheet" href="/css/aula15.css">
+    <title>Aula 15 de JS</title>
 </head>
 <body>
-    <main id="tela-princippal">
-        <h1>Calculadora de IMC</h1>
-        <form action="" method="POST" id="formulario">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input 
-                    class="input" 
-                    type="text" 
-                    name="nome" 
-                    id="nome" 
-                    placeholder="Digite seu nome"
-                    autofocus
-                    required>
-            </div>
-            <div class="form-group">
-                <label for="idade">Idade</label>
-                <input 
-                class="input"
+    <form action="#" method="post">
+        <h1>Cálculo de Média</h1>
+        <main>
+         <div class="form-group">
+            <label for="nota1">1ª nota</label>
+            <input 
                 type="number" 
-                name="idade" 
-                id="idade"
-                min="0"
-                max="130"
-                required>
-            </div>
-            <div class="form-group">
-                <label for="peso">Peso</label>
-                <input 
-                class="input"
+                min="0.0"
+                max="10.0"
+                name="nota1" 
+                id="nota1" 
+                placeholder="digite sua nota">
+         </div>   
+         <div class="form-group">
+            <label for="nota2">2ª nota</label>
+            <input 
                 type="number"
                 min="0.0"
-                max="500.0"
-                step="0.01" 
-                name="peso" 
-                id="peso"
-                required>
-            </div>
-            <div class="form-group">
-                <label for="altura">Atura</label>
-                <input
-                class="input"
-                type="number"
-                min="0.0"
-                max="2.70"
-                step="0.01" 
-                name="altura" 
-                id="altura"
-                required>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="botao" id="btnEnviar">Enviar</button>
-                <button type="reset" class="botao" id="btnLimpar">Limpar</button>
-            </div>
-            <div class="form-group">
-                <label for="resultadoImc">IMC</label>
-                <input 
-                type="number"
-                name="imc"
-                id="resultadoImc"
-                class="input"
-                value="0.0"
-                disabled>
-                <span id="aviso"></span>
-            </div>
-        </form>
-        <div id="resultado">
-            <h2 id="id" class="pessoa">IMC</h2>
-            <p id="nome" class="pessoa"></p>
-            <p id="idade" class="pessoa"></p>
-            <p id="peso" class="pessoa"></p>
-            <p id="altura" class="pessoa"></p>
-            <p id="imc" class="pessoa"></p>
+                max="10.0" 
+                name="nota2" 
+                id="nota2" 
+                placeholder="digite sua nota">
+         </div> 
+        </main>
+        <div class="botoes">
+            <button type="submit" class="botao" id="btnCalc">Calcular</button>
+            <button type="reset" class="botao" id="btnRst">Limpar</button>
+        </div> 
+        <div class="resultados">
+            <label for="media">Média</label>
+            <input type="number" name="media" id="media" disabled>
         </div>
+<<<<<<< HEAD
     </main>
     <script src="js/aula15.js"></script>
+=======
+        <span class="aviso"></span>
+    </form>
+>>>>>>> Aula-14
 </body>
 </html>

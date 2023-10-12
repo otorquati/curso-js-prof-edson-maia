@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
 <body>
     <form action="#" method="post">
         <h1>Cálculo de Média</h1>
+<<<<<<< HEAD
         <main>
          <div class="form-group">
             <label for="nota1">1ª nota</label>
@@ -46,5 +47,46 @@
         <span class="aviso"></span>
     </form>
 >>>>>>> Aula-14
+=======
+        <main id="main-screen">
+            <div class="form-group">
+                <label for="nota1">1ª Nota:</label>
+                <input 
+                    type="number" 
+                    name="nota1" 
+                    id="nota1"
+                    min="0.0"
+                    max="10.0"
+                    placeholder="Qual a 1ª nota?">
+            </div>
+            <div class="form-group">
+                <label for="nota2">2ª Nota:</label>
+                <input 
+                    type="number" 
+                    name="nota2" 
+                    id="nota2"
+                    min="0.0"
+                    max="10.0"
+                    placeholder="Qual a 2ª nota?">
+                </div>
+            </main>
+            <div class="botao">
+                <button type="submit" id="btnCalc">Calcular</button>
+                <button type="reset" id="btnRst">Limpar</button>
+            </div>
+            <div class="resultados">
+                <input 
+                    type="number" 
+                    id="resultado"
+                    name="resultado"
+                    max="10"
+                    min="0.0"
+                    disabled
+                    >
+            </div>
+            <span id="aviso"></span>
+    </form>
+    <script src="/js/aula15.js"></script>
+>>>>>>> Aula-15
 </body>
 </html>

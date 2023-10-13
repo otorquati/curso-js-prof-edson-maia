@@ -26,40 +26,49 @@ h1 {
     color: var(--cor2);
 }
 
-form {
+main {
     width: 400px;
-    height: 80%;
     margin: auto;
 }
 
-main {
+.conteudo {
     margin: auto;
     background-color: var(--cor3);
-    border-radius: 5px;
+    border-radius: 10px;
 }
-
 .form-group {
     margin: auto;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    justify-content: center;
+    text-align: center;
     border-radius: 10px;
 }
-.resultados {
+
+
+p {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     margin: 10px auto;
+    justify-content: center;
     padding: 10px;
 }
 
 label {
-    /* text-align: center;*/
+    padding: 10px;
     font-weight: bold;
 }
 
 input[type=number] {
-    border: 1px solid #CCC;
+    border: 1px solid #fff;
+    border-radius: 5px;
     padding: 10px;
+}
+
+#media {
+    border: 2px solid #000;
+    border-radius: 5px;
 }
 
 .botoes {
@@ -69,8 +78,8 @@ input[type=number] {
 }
 
 .botao {
-    border: 1px solid var(--cor2);
-    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
@@ -78,94 +87,35 @@ input[type=number] {
 
 #btnCalc {
     background-color: lightblue;
+    border: 3px outset lightblue;
 }
 
 #btnRst {
-    background-color: pink;
-}
-
-@charset "UTF-8";
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, sans-serif;
-}
-
-:root {
-    --cor1: #FFFFFF;
-    --cor2: #001ca4;
-    --cor3: #FFD700;
-}
-
-body {
-    width: 100vw;
-    /* height: 100vh;*/
-    background-color: #ccc;
-    color: var(--cor2);
-    text-align: center;
-
-}
-form {
-    display: flex;
-    flex-flow: column;
-    box-sizing: border-box;
-}
-
-#main-screen {
-    width: 400px;
-    margin: 0.625rem auto;
-    background-color: var(--cor3);
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.form-group {
-    width: 80%;
-    margin: 5px auto;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-.botao {
-    width: 400px;
-    margin: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-}
-
-input {
-    width: 100%;
-    border-radius: 5px;
-    padding-bottom: 5px;
-}
-
-
-input[type=number] {
-    border: 1px solid #ececec;
-    border-radius: 5px;
-    margin: auto;
-}
-
-#btnCalc {
-    background-color: lightcyan;
-    padding: 5px;
-    border: 2px outset gray;
-}
-
-#btnRst {
+    border: 3px outset lightsalmon;
     background-color: lightsalmon;
-    padding: 5px;
-    border: 2px outset gray;
 }
 
-#resultado {
-    width: 400px;
-    margin: 10px auto;
+.cx {
+    width: 100%;
+    background: #ccc;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.alerta {
+    background: #ff0000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.aprovado {
+    background: #64dd17;
+}
+
+.recuperacao {
+    background: #ffc107;
+}
+
+.reprovado {
+    background: #f44336;
 }

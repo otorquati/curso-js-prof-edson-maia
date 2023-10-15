@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/aula15.css">
+    <title>Aula 15 de JS</title>
+</head>
+<body>
+    <main id="main-screen">
+        <h1>Cálculo de Média Ponderada</h1>
+        <section class="conteudo" id="formulario">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nota1">1ª nota (peso 4)</label>
+                    <input
+                        type="number"
+                        min="0.0"
+                        max="10.0"
+                        name="nota1"
+                        id="nota1"
+                        placeholder="digite sua nota"
+                        autofocus required onblur="validaNota(this)">
+                </div>
+                <div class="form-group">
+                    <label for="nota2">2ª nota (peso 6)</label>
+                    <input
+                        type="number"
+                        min="0.0"
+                        max="10.0"
+                        name="nota2"
+                        id="nota2"
+                        placeholder="digite sua nota"
+                        required onblur="validaNota(this)">
+                </div>
+                <div class="botoes">
+                    <button type="submit" class="botao" id="btnCalc">Calcular</button>
+                    <button type="reset" class="botao" id="btnRst">Limpar</button>
+                </div>
+                <div class="form-group">
+                    <label for="media">Média:</label>
+                    <input type="number" name="media" id="media" readonly>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="cx" name="situacao" id="situacao" placeholder="Situação Final">
+                </div>
+            </form>
+            <p id="aviso"></p>
+        </section>
+    </main>
+    <script src="js/aula15.js"></script>
+</body>
+</html>

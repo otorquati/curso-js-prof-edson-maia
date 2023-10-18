@@ -3,53 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Aula 16 de JS</title>
-    <link rel="stylesheet" href="css/aula16.css">
+    <link rel="stylesheet" href="/css/aula16.css">
 </head>
 <body>
-    <main id="main-screen">
-        <h1>Jogo de Dados</h1>
-        <section class="jogo">
-            <form action="#" class="dado">
-            <div class="lin1">
-                <div class="ponto" id="l1c1">
-                    <p>1</p>
-                </div>
-                <div class="ponto" id="l1c2">
-                    <p>2</p>                  
-                </div>
-                <div class="ponto" id="l1c3">
-                    <p>3</p>                   
-                </div>
-            </div>
-            <div class="lin2">
-                <div class="ponto" id="l2c1">
-                    <p>4</p>                   
-                </div>
-                <div class="ponto" id="l2c2">
-                    <p>5</p>                   
-                </div>
-                <div class="ponto" id="l2c3">
-                    <p>6</p>                    
-                </div>
-            </div>
-            <div class="lin3">
-                <div class="ponto" id="l3c1">
-                    <p>7</p>                    
-                </div>
-                <div class="ponto" id="l3c2">
-                    <p>8</p>              
-                </div>
-                <div class="ponto" id="l3c3">
-                    <p>9</p>
-                </div>
-            </div>
-            </form>
+    <main id="tela-principal">
+        <h1>Dado Virtual D6 | Virtual Dice</h1>
+        <section class="conteudo">
+            <p id="sorteado" class="centro">?</p>
+            <figure>
+                <img 
+                    src="/img/dado/0.png" 
+                    alt="Dado" 
+                    id="imgDado"
+                >
+            </figure>
         </section>
-        <div class="dados">
-            <button id="btn">Jogue o Dado</button>
-        </div>
+        <p class="centro">
+            <button id="btnSortear">Sortear</button>
+        </p>
     </main>
-    
+    <audio 
+        id="dadoRolando"
+        src="/assets/dado-rolando.mp3"
+        type="audio/mpeg">
+    </audio>
+    <script src="/js/aula16.js"></script>
 </body>
 </html>
